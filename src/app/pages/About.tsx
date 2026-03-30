@@ -4,6 +4,9 @@ import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { CTABanner } from '../components/CTABanner';
 
 export function About() {
+  const officeImage = `${import.meta.env.BASE_URL}office1.jpg`;
+  const founderImage = `${import.meta.env.BASE_URL}papa.jpg`;
+
   const milestones = [
     { year: '2003', event: 'RKK Associates Established' },
     { year: '2008', event: 'Expanded to Corporate Advisory' },
@@ -92,7 +95,7 @@ export function About() {
               viewport={{ once: true }}
             >
               <ImageWithFallback
-                src="office1.jpg"
+                src={officeImage}
                 alt="Modern Office"
                 className="rounded-2xl shadow-xl"
               />
@@ -113,7 +116,7 @@ export function About() {
               className="order-2 md:order-1"
             >
               <ImageWithFallback
-                src="papa.jpg"
+                src={founderImage}
                 alt="Founder Profile"
                 className="rounded-2xl shadow-xl"
               />

@@ -19,6 +19,8 @@ import { CTABanner } from '../components/CTABanner';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 
 export function Home() {
+  const officeHeroImage = `${import.meta.env.BASE_URL}office2.jpg`;
+
   const services = [
     {
       icon: FileText,
@@ -144,7 +146,7 @@ export function Home() {
               className="hidden md:block"
             >
               <ImageWithFallback
-                src="office2.jpg"
+                src={officeHeroImage}
                 alt="Professional CA Office"
                 className="rounded-2xl shadow-2xl"
               />
