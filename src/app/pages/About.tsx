@@ -8,7 +8,7 @@ export function About() {
   const founderImage = `${import.meta.env.BASE_URL}papa.jpg`;
 
   const milestones = [
-    { year: '2003', event: 'RKK Associates Established' },
+    { year: '1987', event: 'RKK Associates Established' },
     { year: '2008', event: 'Expanded to Corporate Advisory' },
     { year: '2015', event: 'Achieved 300+ Client Milestone' },
     { year: '2020', event: 'Launched Digital Services' },
@@ -58,7 +58,7 @@ export function About() {
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-4">About RKK Associates</h1>
             <p className="text-lg text-white/90 max-w-2xl mx-auto">
-              Your trusted financial partner committed to excellence, integrity, and personalized service since 2003
+              Your trusted financial partner committed to excellence, integrity, and personalized service since 1987
             </p>
           </motion.div>
         </div>

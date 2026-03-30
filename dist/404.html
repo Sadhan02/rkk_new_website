@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+      (function () {
+        const pathSegmentsToKeep = 1;
+        const { protocol, hostname, port, pathname, search, hash } = window.location;
+        const parts = pathname.split('/');
+        const basePath = parts.slice(0, 1 + pathSegmentsToKeep).join('/') || '/';
+
+        sessionStorage.setItem(
+          'spa-redirect',
+          JSON.stringify({ pathname, search, hash }),
+        );
+
+        window.location.replace(
+          protocol + '//' + hostname + (port ? ':' + port : '') + basePath + '/'
+        );
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
