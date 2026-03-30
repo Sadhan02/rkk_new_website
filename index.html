@@ -1,0 +1,25 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>RKK Associates</title>
+      <script type="text/javascript">
+        (function () {
+          const redirect = sessionStorage.getItem('spa-redirect');
+          if (!redirect) return;
+          sessionStorage.removeItem('spa-redirect');
+          const { pathname, search, hash } = JSON.parse(redirect);
+          window.history.replaceState(null, '', pathname + search + hash);
+        })();
+      </script>
+      <script type="module" crossorigin src="/rkk_new_website/assets/index-Dbk0GB6h.js"></script>
+      <link rel="stylesheet" crossorigin href="/rkk_new_website/assets/index-CQ3XdK-L.css">
+    </head>
+
+    <body>
+      <div id="root"></div>
+    </body>
+  </html>
+  
